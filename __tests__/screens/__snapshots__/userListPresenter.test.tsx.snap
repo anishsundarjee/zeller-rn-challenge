@@ -1,0 +1,1381 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`---UserListPresenter--- compare snapshot admin users 1`] = `
+<View
+  style={
+    [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      [
+        {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        {
+          "paddingTop": 0,
+        },
+        {},
+      ],
+    ]
+  }
+  testID="user-list-container"
+>
+  <View
+    style={
+      [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        [
+          {
+            "paddingBottom": 24,
+            "paddingTop": 16,
+          },
+          {
+            "paddingHorizontal": 24,
+          },
+          {},
+        ],
+      ]
+    }
+    testID="container-main-view"
+  >
+    <View
+      style={
+        [
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "column",
+            "height": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            {
+              "display": "flex",
+              "flexGrow": 1,
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <Text
+          h5={true}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "color": "#20303C",
+                "writingDirection": "ltr",
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              {},
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          User Types
+        </Text>
+        <View
+          style={
+            [
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "height": 16,
+                  "width": 8,
+                },
+                undefined,
+              ],
+            ]
+          }
+          testID="padder-view"
+        />
+        <View
+          style={
+            [
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+            ]
+          }
+          testID="text-input-view"
+        >
+          <View
+            style={
+              [
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                [
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+          >
+            <View
+              row={true}
+              spread={true}
+              style={
+                [
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  {},
+                  {},
+                  {
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                color="#464A51"
+                fsTagName="unmask"
+                style={
+                  [
+                    {
+                      "backgroundColor": "transparent",
+                      "color": "#20303C",
+                      "writingDirection": "ltr",
+                    },
+                    undefined,
+                    {
+                      "color": "#464A51",
+                    },
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    [
+                      {
+                        "minHeight": 20,
+                      },
+                      [
+                        {
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "lineHeight": 14,
+                        },
+                        undefined,
+                      ],
+                      undefined,
+                    ],
+                  ]
+                }
+                testID="user-filter-input.label"
+              >
+                Search Users
+              </Text>
+            </View>
+            <View
+              centerV={true}
+              row={true}
+              style={
+                [
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  {},
+                  {},
+                  {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  },
+                  [
+                    undefined,
+                    [
+                      [
+                        {
+                          "borderRadius": 8,
+                          "borderWidth": 1,
+                          "height": 48,
+                          "paddingHorizontal": 16,
+                        },
+                        {
+                          "borderColor": "#464A51",
+                          "height": 48,
+                          "width": 702,
+                        },
+                      ],
+                      undefined,
+                    ],
+                  ],
+                ]
+              }
+            >
+              <View
+                flexG={true}
+                style={
+                  [
+                    undefined,
+                    undefined,
+                    undefined,
+                    {
+                      "flexGrow": 1,
+                    },
+                    undefined,
+                    {},
+                    {},
+                    {},
+                    undefined,
+                  ]
+                }
+              >
+                <TextInput
+                  accessibilityState={
+                    {
+                      "disabled": false,
+                    }
+                  }
+                  autoCorrect={false}
+                  autoFocus={false}
+                  cursorColor="#2E61DE"
+                  editable={true}
+                  onBlur={[Function]}
+                  onChangeText={[Function]}
+                  onFocus={[Function]}
+                  onSubmitEditing={[Function]}
+                  placeholder="Search Users"
+                  placeholderTextColor="#464A51"
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "paddingBottom": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                      {
+                        "color": "#000000",
+                      },
+                      [
+                        {},
+                        undefined,
+                        {
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "lineHeight": 14,
+                        },
+                        undefined,
+                      ],
+                      false,
+                    ]
+                  }
+                  testID="user-filter-input"
+                  underlineColorAndroid="transparent"
+                  value=""
+                />
+              </View>
+            </View>
+            <View
+              row={true}
+              spread={true}
+              style={
+                [
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  {},
+                  {},
+                  {
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    undefined,
+                    undefined,
+                    undefined,
+                    {
+                      "flex": 1,
+                    },
+                    undefined,
+                    {},
+                    {},
+                    {},
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                style={
+                  [
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                  ]
+                }
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "height": 16,
+                  "width": 8,
+                },
+                undefined,
+              ],
+            ]
+          }
+          testID="padder-view"
+        />
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "paddingBottom": 0,
+            }
+          }
+        >
+          <RCTScrollView
+            ListFooterComponent={[Function]}
+            ListHeaderComponent={[Function]}
+            data={
+              [
+                {
+                  "email": "customer@mock.com",
+                  "id": "1",
+                  "name": "Customer 1",
+                  "role": "ADMIN",
+                },
+                {
+                  "email": "customer2@mock.com",
+                  "id": "2",
+                  "name": "Customer 2",
+                  "role": "ADMIN",
+                },
+              ]
+            }
+            getItem={[Function]}
+            getItemCount={[Function]}
+            keyExtractor={[Function]}
+            onContentSizeChange={[Function]}
+            onLayout={[Function]}
+            onMomentumScrollBegin={[Function]}
+            onMomentumScrollEnd={[Function]}
+            onScroll={[Function]}
+            onScrollBeginDrag={[Function]}
+            onScrollEndDrag={[Function]}
+            refreshControl={
+              <RefreshControlMock
+                onRefresh={[Function]}
+                refreshing={false}
+              />
+            }
+            removeClippedSubviews={false}
+            renderItem={[Function]}
+            scrollEventThrottle={0.0001}
+            showsVerticalScrollIndicator={false}
+            stickyHeaderIndices={[]}
+            testID="user-list"
+            viewabilityConfigCallbackPairs={[]}
+          >
+            <RCTRefreshControl />
+            <View>
+              <View
+                collapsable={false}
+                onLayout={[Function]}
+              >
+                <View
+                  style={
+                    [
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityRole="button"
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "#ADD8E6",
+                        "borderRadius": 8,
+                        "flexDirection": "row",
+                        "marginBottom": 4,
+                        "opacity": 1,
+                        "paddingHorizontal": 16,
+                        "paddingVertical": 16,
+                      }
+                    }
+                    testID="user-type-btn-Admin"
+                  >
+                    <View
+                      accessibilityLabel="selected. "
+                      accessibilityRole="button"
+                      accessible={true}
+                      activeOpacity={1}
+                      centerV={true}
+                      color="#2E61DE"
+                      forwardedRef={null}
+                      iconOnRight={false}
+                      modifiers={
+                        {
+                          "alignments": {},
+                          "backgroundColor": undefined,
+                          "borderRadius": undefined,
+                          "color": undefined,
+                          "flexStyle": undefined,
+                          "margins": {},
+                          "paddings": {},
+                          "positionStyle": undefined,
+                          "typography": undefined,
+                        }
+                      }
+                      onPress={[Function]}
+                      row={true}
+                      selected={true}
+                      size={20}
+                      style={
+                        [
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          {},
+                          {},
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                          },
+                          undefined,
+                        ]
+                      }
+                      testID="radio-btn"
+                    >
+                      <View
+                        style={
+                          [
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            [
+                              {
+                                "borderColor": "#2E61DE",
+                                "borderRadius": 12,
+                                "borderWidth": 2,
+                                "height": 20,
+                                "padding": 3,
+                                "width": 20,
+                              },
+                              {
+                                "height": 20,
+                                "width": 20,
+                              },
+                              {
+                                "borderColor": "#2E61DE",
+                              },
+                              undefined,
+                            ],
+                          ]
+                        }
+                      >
+                        <View
+                          collapsable={false}
+                          style={
+                            {
+                              "backgroundColor": "#2E61DE",
+                              "borderRadius": 12,
+                              "flex": 1,
+                              "opacity": 0,
+                              "transform": [
+                                {
+                                  "scale": 0.8,
+                                },
+                              ],
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        [
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          [
+                            {
+                              "backgroundColor": "transparent",
+                              "height": 8,
+                              "width": 8,
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                      testID="padder-view"
+                    />
+                    <Text
+                      black={true}
+                      body={true}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "color": "#20303C",
+                            "writingDirection": "ltr",
+                          },
+                          undefined,
+                          {
+                            "color": "#000000",
+                          },
+                          undefined,
+                          undefined,
+                          {},
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                        ]
+                      }
+                      testID="user-type-txt-Admin"
+                    >
+                      Admin
+                    </Text>
+                  </View>
+                  <View
+                    accessibilityRole="button"
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": false,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "#FFFFFF",
+                        "borderRadius": 8,
+                        "flexDirection": "row",
+                        "marginBottom": 4,
+                        "opacity": 1,
+                        "paddingHorizontal": 16,
+                        "paddingVertical": 16,
+                      }
+                    }
+                    testID="user-type-btn-Manager"
+                  >
+                    <View
+                      accessibilityLabel="unselected. "
+                      accessibilityRole="button"
+                      accessible={true}
+                      activeOpacity={1}
+                      centerV={true}
+                      color="#2E61DE"
+                      forwardedRef={null}
+                      iconOnRight={false}
+                      modifiers={{}}
+                      onPress={[Function]}
+                      row={true}
+                      selected={false}
+                      size={20}
+                      style={
+                        [
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          {},
+                          {},
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                          },
+                          undefined,
+                        ]
+                      }
+                      testID="radio-btn"
+                    >
+                      <View
+                        style={
+                          [
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            undefined,
+                            [
+                              {
+                                "borderColor": "#2E61DE",
+                                "borderRadius": 12,
+                                "borderWidth": 2,
+                                "height": 20,
+                                "padding": 3,
+                                "width": 20,
+                              },
+                              {
+                                "height": 20,
+                                "width": 20,
+                              },
+                              {
+                                "borderColor": "#2E61DE",
+                              },
+                              undefined,
+                            ],
+                          ]
+                        }
+                      >
+                        <View
+                          collapsable={false}
+                          style={
+                            {
+                              "backgroundColor": "#2E61DE",
+                              "borderRadius": 12,
+                              "flex": 1,
+                              "opacity": 0,
+                              "transform": [
+                                {
+                                  "scale": 0.8,
+                                },
+                              ],
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        [
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          [
+                            {
+                              "backgroundColor": "transparent",
+                              "height": 8,
+                              "width": 8,
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                      testID="padder-view"
+                    />
+                    <Text
+                      black={true}
+                      body={true}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "color": "#20303C",
+                            "writingDirection": "ltr",
+                          },
+                          undefined,
+                          {
+                            "color": "#000000",
+                          },
+                          undefined,
+                          undefined,
+                          {},
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                        ]
+                      }
+                      testID="user-type-txt-Manager"
+                    >
+                      Manager
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "height": 24,
+                            "width": 8,
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                    testID="padder-view"
+                  />
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        [
+                          {
+                            "backgroundColor": "#464A51",
+                            "height": 1,
+                            "width": 750,
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                    testID="padder-view"
+                  />
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "height": 24,
+                            "width": 8,
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                    testID="padder-view"
+                  />
+                  <Text
+                    h5={true}
+                    style={
+                      [
+                        {
+                          "backgroundColor": "transparent",
+                          "color": "#20303C",
+                          "writingDirection": "ltr",
+                        },
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        {},
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                      ]
+                    }
+                  >
+                    Admin Users
+                  </Text>
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "height": 16,
+                            "width": 8,
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                    testID="padder-view"
+                  />
+                </View>
+              </View>
+              <View
+                onFocusCapture={[Function]}
+                onLayout={[Function]}
+                style={null}
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessibilityValue={
+                    {
+                      "max": undefined,
+                      "min": undefined,
+                      "now": undefined,
+                      "text": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#FFFFFF",
+                      "flexDirection": "row",
+                      "marginBottom": 4,
+                      "opacity": 1,
+                      "paddingBottom": 8,
+                    }
+                  }
+                  testID="user-btn-Customer 1"
+                >
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "#ADD8E6",
+                          "borderRadius": 8,
+                          "height": 50,
+                          "justifyContent": "center",
+                          "width": 50,
+                        },
+                      ]
+                    }
+                    testID="user-icon-Customer 1"
+                  >
+                    <Text
+                      blue={true}
+                      body700={true}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "color": "#20303C",
+                            "writingDirection": "ltr",
+                          },
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          {},
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                        ]
+                      }
+                    >
+                      C
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "height": 8,
+                            "width": 8,
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                    testID="padder-view"
+                  />
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                      ]
+                    }
+                  >
+                    <Text
+                      black={true}
+                      body700={true}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "color": "#20303C",
+                            "writingDirection": "ltr",
+                          },
+                          undefined,
+                          {
+                            "color": "#000000",
+                          },
+                          undefined,
+                          undefined,
+                          {},
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                        ]
+                      }
+                    >
+                      Customer 1
+                    </Text>
+                    <Text
+                      black={true}
+                      body={true}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "color": "#20303C",
+                            "writingDirection": "ltr",
+                          },
+                          undefined,
+                          {
+                            "color": "#000000",
+                          },
+                          undefined,
+                          undefined,
+                          {},
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                        ]
+                      }
+                    >
+                      ADMIN
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                onFocusCapture={[Function]}
+                onLayout={[Function]}
+                style={null}
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessibilityValue={
+                    {
+                      "max": undefined,
+                      "min": undefined,
+                      "now": undefined,
+                      "text": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#FFFFFF",
+                      "flexDirection": "row",
+                      "marginBottom": 4,
+                      "opacity": 1,
+                      "paddingBottom": 8,
+                    }
+                  }
+                  testID="user-btn-Customer 2"
+                >
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "#ADD8E6",
+                          "borderRadius": 8,
+                          "height": 50,
+                          "justifyContent": "center",
+                          "width": 50,
+                        },
+                      ]
+                    }
+                    testID="user-icon-Customer 2"
+                  >
+                    <Text
+                      blue={true}
+                      body700={true}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "color": "#20303C",
+                            "writingDirection": "ltr",
+                          },
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                          {},
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                        ]
+                      }
+                    >
+                      C
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "height": 8,
+                            "width": 8,
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                    testID="padder-view"
+                  />
+                  <View
+                    style={
+                      [
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                      ]
+                    }
+                  >
+                    <Text
+                      black={true}
+                      body700={true}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "color": "#20303C",
+                            "writingDirection": "ltr",
+                          },
+                          undefined,
+                          {
+                            "color": "#000000",
+                          },
+                          undefined,
+                          undefined,
+                          {},
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                        ]
+                      }
+                    >
+                      Customer 2
+                    </Text>
+                    <Text
+                      black={true}
+                      body={true}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "color": "#20303C",
+                            "writingDirection": "ltr",
+                          },
+                          undefined,
+                          {
+                            "color": "#000000",
+                          },
+                          undefined,
+                          undefined,
+                          {},
+                          undefined,
+                          undefined,
+                          undefined,
+                          undefined,
+                        ]
+                      }
+                    >
+                      ADMIN
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                onLayout={[Function]}
+              >
+                <View
+                  style={
+                    [
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      [
+                        {
+                          "backgroundColor": "#464A51",
+                          "height": 1,
+                          "width": 750,
+                        },
+                        {
+                          "marginBottom": 100,
+                          "marginTop": 16,
+                        },
+                      ],
+                    ]
+                  }
+                  testID="padder-view"
+                />
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

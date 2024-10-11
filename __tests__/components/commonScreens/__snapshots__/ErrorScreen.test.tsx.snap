@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorScreen compare snapshot 1`] = `
+<View
+  style={
+    [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      [
+        {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        {
+          "paddingTop": 0,
+        },
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+      ],
+    ]
+  }
+  testID="error-screen"
+>
+  <View
+    style={
+      [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        [
+          {
+            "paddingBottom": 24,
+            "paddingTop": 16,
+          },
+          {
+            "paddingHorizontal": 24,
+          },
+          {},
+        ],
+      ]
+    }
+    testID="container-main-view"
+  >
+    <Text
+      body700={true}
+      h5={true}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "color": "#20303C",
+            "writingDirection": "ltr",
+          },
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          {},
+          {
+            "textAlign": "center",
+          },
+          undefined,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      Error processing request
+    </Text>
+    <View
+      style={
+        [
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          [
+            {
+              "backgroundColor": "transparent",
+              "height": 8,
+              "width": 8,
+            },
+            undefined,
+          ],
+        ]
+      }
+      testID="padder-view"
+    />
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#2E61DE",
+          "borderRadius": 8,
+          "marginRight": 8,
+          "opacity": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        }
+      }
+      testID="error-button"
+    >
+      <Text
+        button={true}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "color": "#20303C",
+              "writingDirection": "ltr",
+            },
+            undefined,
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            undefined,
+            {},
+            {
+              "textAlign": "center",
+            },
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+        white={true}
+      >
+        Try Again
+      </Text>
+    </View>
+  </View>
+</View>
+`;

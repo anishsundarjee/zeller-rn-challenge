@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Colors, Typography } from 'react-native-ui-lib';
+import { Amplify } from 'aws-amplify';
+import awsconfig from '@/awsConfig';
+import { AppNavigator } from '@/navigation';
+import { COLORS, TYPOGRAPHIES } from '@/constants';
+
+Amplify.configure(awsconfig);
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  Colors.loadColors(COLORS);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  Typography.loadTypographies(TYPOGRAPHIES);
+
+  const queryClient = new QueryClient({
+    defaultOptions: { queries: { retry: 2 } },
+  });
+  return (
+    <QueryClientProvider client={queryClient}>
+      <AppNavigator />
+    </QueryClientProvider>
+  );
+};

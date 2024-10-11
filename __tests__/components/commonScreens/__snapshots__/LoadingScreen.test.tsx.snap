@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingScreen compare snapshot 1`] = `
+<View
+  style={
+    [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      [
+        {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        {
+          "paddingTop": 0,
+        },
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+      ],
+    ]
+  }
+  testID="loading-screen"
+>
+  <View
+    style={
+      [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        [
+          {
+            "paddingBottom": 24,
+            "paddingTop": 16,
+          },
+          {
+            "paddingHorizontal": 24,
+          },
+          {},
+        ],
+      ]
+    }
+    testID="container-main-view"
+  >
+    <Text
+      body700={true}
+      h5={true}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "color": "#20303C",
+            "writingDirection": "ltr",
+          },
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          {},
+          {
+            "textAlign": "center",
+          },
+          undefined,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      Loading...
+    </Text>
+  </View>
+</View>
+`;

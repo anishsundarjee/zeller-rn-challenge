@@ -1,0 +1,4 @@
+export const SCREENS = {
+  USER_LIST: 'USER_LIST',
+  USER_DETAILS: 'USER_DETAILS',
+}
