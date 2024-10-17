@@ -23,7 +23,6 @@ const UserListPresenter = () => {
     handleUserPress,
     refreshing,
     onRefresh,
-    isTyping,
   } = useUserList();
 
   const renderItem = ({item}: {item: TCustomer}) => (
@@ -40,7 +39,7 @@ const UserListPresenter = () => {
     ) : null
   };
 
-  if (isLoading && !isTyping) {
+  if (isLoading) {
     return <LoadingScreen testID='user-list-screen-loading' />;
   }
 

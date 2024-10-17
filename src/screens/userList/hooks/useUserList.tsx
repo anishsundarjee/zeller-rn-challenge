@@ -11,7 +11,6 @@ export const useUserList = () => {
     { label: 'Admin', value: ROLES.ADMIN, type: 'role', isSelected: true },
     { label: 'Manager', value: ROLES.MANAGER, type: 'role', isSelected: false },
   ]);
-  const [isTyping, setIsTyping] = useState(false); // used to determine if user is typing in search input since we don't want to show loading screen when user is typing
   const { data, isLoading, isError, refetch } = useListCustomers({filter});
 
   const refreshData = async () => {
@@ -30,10 +29,8 @@ export const useUserList = () => {
     setFilterOptions(newFilterOptions);
   
     if (value.type === 'role') {
-      setIsTyping(false);
       setFilter({ role: { eq: value.value as TRole } });
     } else {
-      setIsTyping(true);
       setFilter({ name: { contains: value.value } });
     }
   };
@@ -52,6 +49,5 @@ export const useUserList = () => {
     refreshData,
     refreshing: isRefetchingByUser,
     onRefresh: refetchByUser,
-    isTyping,
   };
 };

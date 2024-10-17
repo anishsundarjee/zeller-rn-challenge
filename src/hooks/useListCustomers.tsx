@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import { listZellerCustomers } from '@/data';
 import { TPartialFilter, TCustomer } from '@/types';
 
@@ -9,9 +9,10 @@ type TListCustomerParams = {
 };
 
 export const useListCustomers = ({ filter, limit = 10, nextToken = '' }: TListCustomerParams) => {
-  const { data, isLoading, isError, refetch, isRefetching } = useQuery({
+  const { data, isLoading, isError, refetch, isRefetching, isPlaceholderData } = useQuery({
     queryKey: ['listZellerCustomers', filter, limit, nextToken],
     queryFn: () => getCustomers(),
+    placeholderData: keepPreviousData,
   });
 
   const getCustomers = async () => {
@@ -32,7 +33,7 @@ export const useListCustomers = ({ filter, limit = 10, nextToken = '' }: TListCu
 
   return {
     data: items,
-    isLoading,
+    isLoading: isPlaceholderData ? false : isLoading,
     isRefetching,
     isError,
     refetch,
