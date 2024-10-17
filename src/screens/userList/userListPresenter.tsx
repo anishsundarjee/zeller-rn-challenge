@@ -1,61 +1,100 @@
-import React, { useState } from 'react';
-import { UserListScreen } from './userListScreen';
-import { useListCustomers, useRefreshByUser } from '@/hooks';
-import { TPartialFilter, TFilterOptions, ROLES, TCustomer, TRole } from '@/types';
-import { useNavigation } from '@react-navigation/native';
-import { DefaultAppScreenNavigationProp } from '@navigation/types';
+import React from 'react';
+import {
+  StyleSheet,
+  FlatList,
+  RefreshControl,
+  KeyboardAvoidingView
+} from 'react-native';
+import { View, Text } from 'react-native-ui-lib';
+import { TCustomer } from '@/types';
+import { Container, Padder, ErrorScreen, LoadingScreen } from '@/components';
+import { COLORS, STRINGS } from '@/constants';
+import { UserTypeSelector, User, UserFilterInput } from './components';
+import { useUserList } from './hooks';
 
 const UserListPresenter = () => {
-  const { navigate } = useNavigation<DefaultAppScreenNavigationProp>();
-  const [filter, setFilter] = useState<TPartialFilter>({ role: { eq: ROLES.ADMIN } });
-  const [filterOptions, setFilterOptions] = useState<TFilterOptions[]>([
-    { label: 'Admin', value: ROLES.ADMIN, type: 'role', isSelected: true },
-    { label: 'Manager', value: ROLES.MANAGER, type: 'role', isSelected: false },
-  ]);
-  const [isTyping, setIsTyping] = useState(false); // used to determine if user is typing in search input since we don't want to show loading screen when user is typing
-  const { data, isLoading, isError, refetch } = useListCustomers({filter});
-
-  const refreshData = async () => {
-    await refetch();
-  };
-
-  const { isRefetchingByUser, refetchByUser } = useRefreshByUser(refreshData);
-
-  const handleFilterChange = (value: TFilterOptions) => {
-    const newFilterOptions = filterOptions.map((option) => {
-      if (option.label === value.label) {
-        return { ...option, isSelected: true };
-      }
-      return { ...option, isSelected: false };
-    });
-    setFilterOptions(newFilterOptions);
-  
-    if (value.type === 'role') {
-      setIsTyping(false);
-      setFilter({ role: { eq: value.value as TRole } });
-    } else {
-      setIsTyping(true);
-      setFilter({ name: { contains: value.value } });
-    }
-  };
-
-  const handleUserPress = (customer: TCustomer) => {
-    navigate('USER_DETAILS', { id: customer.id });
-  };
-
-  const userListScreenProps = {
-    data: data,
-    filterOptions,
-    handleFilterChange,
-    handleUserPress,
+  const {
+    data,
     isLoading,
     isError,
     refreshData,
-    refreshing: isRefetchingByUser,
-    onRefresh: refetchByUser,
+    filterOptions,
+    handleFilterChange,
+    handleUserPress,
+    refreshing,
+    onRefresh,
     isTyping,
+  } = useUserList();
+
+  const renderItem = ({item}: {item: TCustomer}) => (
+    <User item={item} onPress={handleUserPress}/>
+  );
+
+  const renderListHeader = () => (
+    <UserTypeSelector filterOptions={filterOptions} handleFilterChange={handleFilterChange} />
+  );
+
+  const renderListFooter = () => {
+    return data.length > 0 ? (
+      <Padder h={1} bg={COLORS.grey} wide={true} style={styles.listFooter} />
+    ) : null
   };
-  return <UserListScreen {...userListScreenProps} />;
+
+  if (isLoading && !isTyping) {
+    return <LoadingScreen testID='user-list-screen-loading' />;
+  }
+
+  if (isError) {
+    return <ErrorScreen testID='user-list-screen-error' onPress={refreshData} />;
+  }
+
+  return (
+    <Container testID='user-list-container'>
+      <View style={styles.main}>
+        <View style={styles.top}>
+          <Text h5>{STRINGS.userList.userTypes}</Text>
+          <Padder h={16} />
+          <UserFilterInput handleFilterChange={handleFilterChange} />
+          <Padder h={16} />
+          <KeyboardAvoidingView behavior={'padding'} >
+            <FlatList
+              testID='user-list'
+              showsVerticalScrollIndicator={false}
+              data={data}
+              renderItem={renderItem}
+              ListHeaderComponent={renderListHeader}
+              ListFooterComponent={renderListFooter}
+              keyExtractor={(item) => item.id}
+              refreshControl={
+                <RefreshControl
+                  refreshing={refreshing}
+                  onRefresh={onRefresh}
+                />
+              }
+            />
+          </KeyboardAvoidingView>
+        </View>
+      </View>
+    </Container>
+  );
 };
+
+const styles = StyleSheet.create({
+  main: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    height: '100%',
+  },
+  top: {
+    display: 'flex',
+    flexGrow: 1,
+    width: '100%',
+  },
+  listFooter: {
+    marginTop: 16,
+    marginBottom: 100,
+  }
+});
 
 export default UserListPresenter;
