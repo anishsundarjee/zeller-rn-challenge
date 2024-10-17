@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import { UserListScreen } from './userListScreen';
 import { useListCustomers, useRefreshByUser } from '@/hooks';
 import { TPartialFilter, TFilterOptions, ROLES, TCustomer, TRole } from '@/types';
@@ -21,7 +21,7 @@ const UserListPresenter = () => {
 
   const { isRefetchingByUser, refetchByUser } = useRefreshByUser(refreshData);
 
-  const handleFilterChange = useCallback((value: TFilterOptions) => {
+  const handleFilterChange = (value: TFilterOptions) => {
     const newFilterOptions = filterOptions.map((option) => {
       if (option.label === value.label) {
         return { ...option, isSelected: true };
@@ -35,9 +35,9 @@ const UserListPresenter = () => {
       setFilter({ role: { eq: value.value as TRole } });
     } else {
       setIsTyping(true);
-      setFilter({ name: { contains: value.value as string } });
+      setFilter({ name: { contains: value.value } });
     }
-  }, [filterOptions, setFilterOptions, setIsTyping, setFilter]);
+  };
 
   const handleUserPress = (customer: TCustomer) => {
     navigate('USER_DETAILS', { id: customer.id });

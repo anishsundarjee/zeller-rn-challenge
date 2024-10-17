@@ -12,11 +12,11 @@ export const AppNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen
-          name={SCREENS.USER_LIST as keyof RootStackParamList}
+          name={SCREENS.USER_LIST}
           component={UserListPresenter}
         />
         <Stack.Screen
-          name={SCREENS.USER_DETAILS as keyof RootStackParamList}
+          name={SCREENS.USER_DETAILS}
           component={UserDetailPresenter}
         />
       </Stack.Navigator>

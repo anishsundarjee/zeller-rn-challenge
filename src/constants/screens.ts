@@ -1,4 +1,4 @@
-export const SCREENS = {
-  USER_LIST: 'USER_LIST',
-  USER_DETAILS: 'USER_DETAILS',
+export const enum SCREENS {
+  USER_LIST = 'USER_LIST',
+  USER_DETAILS = 'USER_DETAILS',
 }
